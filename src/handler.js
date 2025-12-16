@@ -32,7 +32,7 @@ const addBookshelf = (request, h) => {
   if (isSuccess) {
     const response = h.response({
       status: 'success',
-      message: 'Buku berhasil ditambakan',
+      message: 'Buku berhasil ditambahkan',
       data: {
         bookId: id,
       },
@@ -67,7 +67,7 @@ const getByIdBookshelf = (request, h) => {
   if(!book){
     const response = h.response({
       status: 'fail',
-      message: 'buku tidak ditemukan',
+      message: 'Buku tidak ditemukan',
     });
     response.code(404);
     return response;
